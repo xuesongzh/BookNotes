@@ -1,8 +1,41 @@
 # [C++ 常用设计模式](https://www.cnblogs.com/schips/p/12306851.html)
 
-[TOC]
+Table of Contents
+=================
 
-
+   * [<a href="https://www.cnblogs.com/schips/p/12306851.html" rel="nofollow">C++ 常用设计模式</a>](#c-常用设计模式)
+      * [背景](#背景)
+      * [1、工厂模式(Factory)](#1工厂模式factory)
+         * [1.1、简单工厂模式](#11简单工厂模式)
+         * [1.2、工厂方法模式](#12工厂方法模式)
+         * [1.3、抽象工厂模式](#13抽象工厂模式)
+      * [2、单例模式(Singleton)](#2单例模式singleton)
+         * [2.1、懒汉单例模式](#21懒汉单例模式)
+            * [2.1.1、非线程安全的懒汉单例模式](#211非线程安全的懒汉单例模式)
+            * [2.1.2、线程安全的懒汉单例模式](#212线程安全的懒汉单例模式)
+            * [2.1.3、双检查锁，线程非安全版本，但由于内存读写reorder不安全](#213双检查锁线程非安全版本但由于内存读写reorder不安全)
+            * [2.1.4、返回一个reference指向local static对象](#214返回一个reference指向local-static对象)
+            * [2.1.5 volatile方式](#215-volatile方式)
+         * [2.2、饿汉单例模式](#22饿汉单例模式)
+      * [3、外观模式(Facade)](#3外观模式facade)
+      * [4、模板模式(Template)](#4模板模式template)
+      * [5、组合模式(Composite)](#5组合模式composite)
+      * [6、代理模式](#6代理模式)
+      * [7、观察者模式(Observer)](#7观察者模式observer)
+      * [8、策略模式(Strategy)](#8策略模式strategy)
+         * [8.1、传统的策略模式实现](#81传统的策略模式实现)
+         * [8.2、使用函数指针实现策略模式](#82使用函数指针实现策略模式)
+      * [<del>9、建造者模式(Builder)</del>](#9建造者模式builder)
+      * [10、适配器模式(Adapter)](#10适配器模式adapter)
+         * [9.1、使用复合实现适配器模式](#91使用复合实现适配器模式)
+         * [9.2、使用继承实现适配器模式](#92使用继承实现适配器模式)
+      * [11、桥接模式(Bridge)](#11桥接模式bridge)
+      * [12、装饰模式(Decorator)](#12装饰模式decorator)
+      * [<del>13、中介者模式(Mediator)</del>](#13中介者模式mediator)
+      * [<del>14、备忘录模式(Memento)</del>](#14备忘录模式memento)
+      * [15、原型模式(Prototype)](#15原型模式prototype)
+      * [16、享元模式(Flyweight)](#16享元模式flyweight)
+      * [17、职责链模式(Chain of Resp.)](#17职责链模式chain-of-resp)
 
 ## 背景
 
